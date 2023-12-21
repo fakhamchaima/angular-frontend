@@ -1,0 +1,23 @@
+<h3>Profile</h3>
+<div id="profile-content">
+    <div class="profile-section">
+        <div class="image-section">
+           
+            <div class="circular-image">
+                <img [src]="employee.image" alt="Image">
+            </div>
+        </div>
+        <div class="details-section">
+            <div>
+                <label><b>First Name:</b></label> {{employee.firstName}}
+            </div>
+            <div>
+                <label><b>Last Name:</b></label> {{employee.lastName}}
+            </div>
+            <div>
+                <label><b>Email:</b></label> {{employee.email}}
+            </div>
+        </div>
+    </div>
+</div>
+<button class="btn btn-dark" style="color: white;" (click)="downloadPDF()">Télécharger PDF</button>

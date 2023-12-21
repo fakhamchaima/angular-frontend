@@ -1,0 +1,13 @@
+.circular-image {
+    width: 100px; /* Définissez la largeur souhaitée */
+    height: 130px; /* Définissez la hauteur souhaitée */
+    border-radius: 50%; /* Applique un rayon de 50% pour créer une forme circulaire */
+    overflow: hidden; /* Cache le contenu qui dépasse de la forme circulaire */
+  }
+  
+  .circular-image img {
+    width: 100%; /* Assurez-vous que l'image remplit la forme circulaire */
+    height: 100%; /* Assurez-vous que l'image remplit la forme circulaire */
+    object-fit: cover; /* Ajuste la taille de l'image pour couvrir la zone disponible */
+  }
+  

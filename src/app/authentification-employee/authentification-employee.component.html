@@ -1,0 +1,41 @@
+
+<!-- <div class="container col-md-6" >
+    <h1 style="color: red;">User Login</h1>
+<form (ngSubmit)= "userlogin()">
+    <div class="mb-3">
+      <label for="exampleInputEmail1">UserId</label>
+      <input type="text"  [(ngModel)] ="user.userid"  class="form-control" id="id" name="id">
+    
+    </div>
+    <div class="mb-3">
+        <label for="exampleInputEmail1">Password</label>
+        <input type="password" [(ngModel)] ="user.password"  class="form-control" id="password" name="password">
+      
+      </div>
+   
+    <button type="submit" class="btn btn-primary" (click)= "Onsbmit()">Sign in</button>
+  </form>
+</div>
+// -->
+<html>
+ <head>
+    <title>Login</title>
+ </head>
+<body>
+    <div class="container col-md-6" >
+        <h2>Connexion</h2>
+        <form  (ngSubmit)= "userlogin()" class="well" >
+            <div class="form-group">
+                <label for="Password1">login</label>
+                <input type="text"  [(ngModel)] ="user.userid"  name="login" id="login" class="form-control">
+            </div>
+            <div class="form-group">
+                <label for="Password1">Password</label>
+                <input type="password" [(ngModel)] ="user.password" name="Password" id="Password" class="form-control">
+            </div>
+            <button type="submit" class="btn btn-primary"  style="text-align: center;">Connected</button>
+        </form>
+
+    </div>
+</body>
+</html>

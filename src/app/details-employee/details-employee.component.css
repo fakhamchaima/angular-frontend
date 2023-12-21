@@ -1,0 +1,40 @@
+#profile-content {
+    margin-bottom: 20px;
+  }
+  
+  .profile-section {
+    display: flex;
+    align-items: center;
+  }
+  
+  .image-section {
+    margin-right: 20px;
+  }
+  
+  .circular-image {
+    width: 100px;
+    height: 150px;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 2px solid #ccc;
+  }
+  
+  .circular-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .details-section {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  label {
+    margin-bottom: 5px;
+  }
+  
+  button {
+    margin-top: 20px;
+  }
+  

@@ -1,0 +1,36 @@
+<h2 > Employee List</h2>
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th>Image</th>
+            <th> First Name</th>
+            <th> Last Name</th>
+            <th> Email</th>
+            <th>Action</th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor = "let emp of employees">
+           
+            <td>
+                <div class="circular-image">
+                <img [src]="emp.image" alt="Image" class="img-fluid" width="100" height="100"></div>
+            </td>
+        <td>{{emp.firstName}}</td>
+        <td>{{emp.lastName}}</td>
+        <td>{{emp.email}}</td>
+      
+        <td>
+            <button (click) = "updateEmployeee(emp.id)" class="btn btn-primary" style="color: white;">Update</button>
+        </td>
+        <td>
+            <button (click) = "deleteEmploye(emp.id)" class="btn btn-danger" style="color: white;">Delete</button>
+        </td>
+        <td>
+            <button (click)= "detailsEmployee(emp.id)" class="btn btn-success" style="color: white;">View</button>
+        </td>
+        </tr>
+        
+    </tbody>
+</table>
